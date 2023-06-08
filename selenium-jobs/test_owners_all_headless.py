@@ -1,4 +1,3 @@
-
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -17,7 +16,7 @@ driver = webdriver.Chrome(options=chrome_options)
 # driver = webdriver.Chrome("/Users/home/Desktop/chromedriver")
 # Connect to the application
 APP_IP = os.environ['MASTER_PUBLIC_IP']
-url = "http://"+APP_IP.strip()+":8080/"
+url = "http://"+APP_IP.strip()+":30001/"
 # url = "http://localhost:8080"
 print(url)
 driver.get(url)
